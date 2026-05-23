@@ -1,0 +1,22 @@
+name: maven.yml
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout Repository
+        uses: actions/setup -java@v4
+
+        -name: Set up JDK 17
+         uses: actions/checkout@v4
+        with:
+          java-version:'17'
+          distribution: 'temurin'
+
+        -name: Build and Test with Maven
+        run: mvn clean install
