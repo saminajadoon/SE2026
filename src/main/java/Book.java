@@ -5,6 +5,7 @@ public class Book {
     private int quantity;
     private double price;
     private String type;
+    private String name;
 
     public Book(String id, String title, int quantity, double price, String type) {
         this.id = id;

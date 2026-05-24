@@ -14,7 +14,7 @@ public class BookIntegrationTest {
                 new BookService(repository);
 
         Book book = new Book(
-                "1ABCD",
+                "1ABCDf",
                 "Clean Code",
                 5,
                 80,
